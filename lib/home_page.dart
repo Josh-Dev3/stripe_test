@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:strappi_test/call_view.dart';
 import 'package:strappi_test/check_out_view.dart';
 import 'package:strappi_test/keys.dart';
+import 'package:strappi_test/list_clients_view.dart';
 
 class HomePage extends StatefulWidget{
   const HomePage ({super.key});
@@ -109,7 +110,7 @@ class _HomePageState extends State<HomePage>{
             }, 
             style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
             child: 
-            Text("Pay now ${amount.toString()}",
+            Text("Prueba de: Paga ahora! ${amount.toString()} USD",
             style: const TextStyle(color: Colors.white)
             ),
             ),
@@ -120,7 +121,7 @@ class _HomePageState extends State<HomePage>{
               ),
             style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
             child: 
-            const Text("Here is for the check",
+            const Text("Prueba de Stripe customizado desde flutter como extensión",
             style: TextStyle(color: Colors.white)
             ),
             ),
@@ -131,7 +132,18 @@ class _HomePageState extends State<HomePage>{
               ),
             style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
             child: 
-            const Text("Call from the API stripe...",
+            const Text("Llamada de pago a la API .NET",
+            style: TextStyle(color: Colors.white)
+            ),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ListCustomersPage()),
+              ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            child: 
+            const Text("Listado de clientes",
             style: TextStyle(color: Colors.white)
             ),
             )

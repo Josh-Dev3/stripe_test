@@ -125,40 +125,6 @@ class _PaymentFormState extends State<PaymentForm> {
                 ),
                 controller: CardFormEditController(),
               ),
-              // const CardField(
-              //   decoration: InputDecoration(
-              //     labelText: 'Detalles de la tarjeta',
-              //   ),
-              // ),
-              // DropdownButtonFormField<String>(
-              //   value: _selectedCountry,
-              //   decoration: const InputDecoration(labelText: 'País o región'),
-              //   items: _countries.map((country) {
-              //     return DropdownMenuItem(
-              //       value: country,
-              //       child: Text(country),
-              //     );
-              //   }).toList(),
-              //   onChanged: (value) {
-              //     setState(() {
-              //       _selectedCountry = value;
-              //     });
-              //   },
-              //   validator: (value) {
-              //     if (value == null) return 'Seleccione un país o región';
-              //     return null;
-              //   },
-              // ),
-              // TextFormField(
-              //   controller: _postalCodeController,
-              //   decoration: const InputDecoration(labelText: 'Código Postal'),
-              //   keyboardType: TextInputType.number,
-              //   maxLength: 6,
-              //   validator: (value) {
-              //     if (value == null || value.isEmpty) return 'Ingrese un código postal válido';
-              //     return null;
-              //   },
-              // ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: Text(_paymentStatus),
